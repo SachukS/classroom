@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Освітні програми</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
 
+  <div class="container py-5">
+    <h1 class="mb-4 text-center">Особистий кабінет студента</h1>
+
+    <div class="accordion" id="educationPrograms">
+
+      <!-- Перший бакалаврський -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bachelorHeading">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bachelorCollapse">
+            Перший бакалаврський рівень
+          </button>
+        </h2>
+        <div id="bachelorCollapse" class="accordion-collapse collapse show" data-bs-parent="#educationPrograms">
+          <div class="accordion-body">
+
+            <!-- Спеціальності бакалавра -->
+            <div class="accordion" id="bachelorSpecialties">
+              <!-- Повторити 8 разів зі зміною ID -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="bachelorSpec1Heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bachelorSpec1Collapse">
+                    Спеціальність 121 — Інженерія програмного забезпечення
+                  </button>
+                </h2>
+                <div id="bachelorSpec1Collapse" class="accordion-collapse collapse" data-bs-parent="#bachelorSpecialties">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Програмування мовою Java</li>
+                      <li>Алгоритми та структури даних</li>
+                      <li>Бази даних</li>
+                      <li>Операційні системи</li>
+                      <li>Мережеві технології</li>
+                      <li>Веб-розробка</li>
+                      <li>Системне програмування</li>
+                      <li>UI/UX дизайн</li>
+                      <li>Мобільна розробка</li>
+                      <li>Кібербезпека</li>
+                      <li>Штучний інтелект</li>
+                      <li>Тестування ПЗ</li>
+                      <li>DevOps</li>
+                      <li>Хмарні технології</li>
+                      <li>Комп’ютерна графіка</li>
+                      <li>Інженерія вимог</li>
+                      <li>Управління проектами</li>
+                      <li>Інтернет речей</li>
+                      <li>Розподілені системи</li>
+                      <li>Машинне навчання</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Додати ще 7 спеціальностей аналогічно -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Другий магістерський -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="masterHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masterCollapse">
+            Другий магістерський рівень
+          </button>
+        </h2>
+        <div id="masterCollapse" class="accordion-collapse collapse" data-bs-parent="#educationPrograms">
+          <div class="accordion-body">
+            <div class="accordion" id="masterSpecialties">
+              <!-- Повторити 5 разів -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="masterSpec1Heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masterSpec1Collapse">
+                    Спеціальність 122 — Комп’ютерні науки
+                  </button>
+                </h2>
+                <div id="masterSpec1Collapse" class="accordion-collapse collapse" data-bs-parent="#masterSpecialties">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Інтелектуальний аналіз даних</li>
+                      <li>Глибинне навчання</li>
+                      <li>Моделювання складних систем</li>
+                      <li>Хмарні обчислення</li>
+                      <li>Інформаційна безпека</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Додати ще 4 спеціальності -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Третій (PhD) -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="phdHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phdCollapse">
+            Третій освітньо-науковий рівень (PhD)
+          </button>
+        </h2>
+        <div id="phdCollapse" class="accordion-collapse collapse" data-bs-parent="#educationPrograms">
+          <div class="accordion-body">
+            <div class="accordion" id="phdSpecialties">
+              <!-- Повторити 2 рази -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="phdSpec1Heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phdSpec1Collapse">
+                    Спеціальність 123 — Комп’ютерна інженерія
+                  </button>
+                </h2>
+                <div id="phdSpec1Collapse" class="accordion-collapse collapse" data-bs-parent="#phdSpecialties">
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Методологія наукових досліджень</li>
+                      <li>Публікаційна етика</li>
+                      <li>Методи оптимізації</li>
+                      <li>Інформаційні технології в науці</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Додати ще 1 спеціальність -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
