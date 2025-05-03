@@ -2,142 +2,193 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Освітні програми</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Особистий кабінет: факультети та дисципліни</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .faculty-card {
+      color: white;
+      border-radius: 12px;
+      padding: 20px;
+      min-height: 200px;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      transition: transform 0.3s ease;
+    }
+    .faculty-card:hover {
+      transform: scale(1.02);
+    }
+    .accordion-button {
+      background-color: #f8f9fa;
+    }
+  </style>
 </head>
 <body class="bg-light">
 
-  <div class="container py-5">
-    <h1 class="mb-4 text-center">Особистий кабінет студента</h1>
+<div class="container py-5">
+  <h1 class="mb-5 text-center">Особистий кабінет: факультети та дисципліни</h1>
 
-    <div class="accordion" id="educationPrograms">
-
-      <!-- Перший бакалаврський -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="bachelorHeading">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bachelorCollapse">
-            Перший бакалаврський рівень
-          </button>
-        </h2>
-        <div id="bachelorCollapse" class="accordion-collapse collapse show" data-bs-parent="#educationPrograms">
-          <div class="accordion-body">
-
-            <!-- Спеціальності бакалавра -->
-            <div class="accordion" id="bachelorSpecialties">
-              <!-- Повторити 8 разів зі зміною ID -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="bachelorSpec1Heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bachelorSpec1Collapse">
-                    Спеціальність 121 — Інженерія програмного забезпечення
-                  </button>
-                </h2>
-                <div id="bachelorSpec1Collapse" class="accordion-collapse collapse" data-bs-parent="#bachelorSpecialties">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>Програмування мовою Java</li>
-                      <li>Алгоритми та структури даних</li>
-                      <li>Бази даних</li>
-                      <li>Операційні системи</li>
-                      <li>Мережеві технології</li>
-                      <li>Веб-розробка</li>
-                      <li>Системне програмування</li>
-                      <li>UI/UX дизайн</li>
-                      <li>Мобільна розробка</li>
-                      <li>Кібербезпека</li>
-                      <li>Штучний інтелект</li>
-                      <li>Тестування ПЗ</li>
-                      <li>DevOps</li>
-                      <li>Хмарні технології</li>
-                      <li>Комп’ютерна графіка</li>
-                      <li>Інженерія вимог</li>
-                      <li>Управління проектами</li>
-                      <li>Інтернет речей</li>
-                      <li>Розподілені системи</li>
-                      <li>Машинне навчання</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- Додати ще 7 спеціальностей аналогічно -->
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Другий магістерський -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="masterHeading">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masterCollapse">
-            Другий магістерський рівень
-          </button>
-        </h2>
-        <div id="masterCollapse" class="accordion-collapse collapse" data-bs-parent="#educationPrograms">
-          <div class="accordion-body">
-            <div class="accordion" id="masterSpecialties">
-              <!-- Повторити 5 разів -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="masterSpec1Heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masterSpec1Collapse">
-                    Спеціальність 122 — Комп’ютерні науки
-                  </button>
-                </h2>
-                <div id="masterSpec1Collapse" class="accordion-collapse collapse" data-bs-parent="#masterSpecialties">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>Інтелектуальний аналіз даних</li>
-                      <li>Глибинне навчання</li>
-                      <li>Моделювання складних систем</li>
-                      <li>Хмарні обчислення</li>
-                      <li>Інформаційна безпека</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- Додати ще 4 спеціальності -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Третій (PhD) -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="phdHeading">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phdCollapse">
-            Третій освітньо-науковий рівень (PhD)
-          </button>
-        </h2>
-        <div id="phdCollapse" class="accordion-collapse collapse" data-bs-parent="#educationPrograms">
-          <div class="accordion-body">
-            <div class="accordion" id="phdSpecialties">
-              <!-- Повторити 2 рази -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="phdSpec1Heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phdSpec1Collapse">
-                    Спеціальність 123 — Комп’ютерна інженерія
-                  </button>
-                </h2>
-                <div id="phdSpec1Collapse" class="accordion-collapse collapse" data-bs-parent="#phdSpecialties">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>Методологія наукових досліджень</li>
-                      <li>Публікаційна етика</li>
-                      <li>Методи оптимізації</li>
-                      <li>Інформаційні технології в науці</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- Додати ще 1 спеціальність -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
+  <div class="row g-4 mb-4">
+    <!-- Cards will be inserted here by JavaScript -->
   </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const faculties = [
+    {
+      name: "Факультет №1",
+      gradient: "linear-gradient(135deg, #4e54c8, #8f94fb)",
+      specialties: [
+        {
+          code: "G5",
+          name: "G5 Електроніка, електронні комунікації, приладобудування та радіотехніка",
+          levels: {
+            Бакалавр: ["Основи радіоелектроніки", "Аналогова та цифрова схемотехніка", "Технічне креслення"],
+            Магістр: ["Проектування електронних систем", "Сучасні телекомунікаційні технології"],
+            PhD: ["Нанотехнології в електроніці"]
+          }
+        }
+      ]
+    },
+    {
+      name: "Факультет №2",
+      gradient: "linear-gradient(135deg, #11998e, #38ef7d)",
+      specialties: [
+        {
+          code: "F3",
+          name: "F3 Комп'ютерні науки",
+          levels: {
+            Бакалавр: ["Програмування мовою Java", "Бази даних", "Алгоритми та структури даних"],
+            Магістр: ["Машинне навчання", "Хмарні обчислення"]
+          }
+        },
+        {
+          code: "F6",
+          name: "F6 Інформаційні системи та технології",
+          levels: {
+            Бакалавр: ["Системний аналіз", "Веб-розробка"],
+            PhD: ["Інформаційні системи в управлінні"]
+          }
+        }
+      ]
+    },
+    {
+      name: "Факультет №3",
+      gradient: "linear-gradient(135deg, #ff416c, #ff4b2b)",
+      specialties: [
+        {
+          code: "F5",
+          name: "F5 Кібербезпека та захист інформації",
+          levels: {
+            Бакалавр: ["Криптографія", "Захист комп’ютерних мереж"],
+            Магістр: ["Етичний хакінг", "Безпечне програмування"]
+          }
+        },
+        {
+          code: "K5",
+          name: "K5 Військове управління (за видами збройних сил)",
+          levels: {
+            Бакалавр: ["Основи військового управління"],
+            PhD: ["Оперативне планування"]
+          }
+        },
+        {
+          code: "K7",
+          name: "K7 Озброєння та військова техніка",
+          levels: {
+            Бакалавр: ["Озброєння та техніка"],
+            Магістр: ["Моделювання озброєння"]
+          }
+        }
+      ]
+    }
+  ];
+
+  const row = document.querySelector(".row");
+  const courseLinks = {
+  "Основи радіоелектроніки": "https://drive.google.com/your-link-1",
+  "Аналогова та цифрова схемотехніка": "https://drive.google.com/your-link-2",
+  "Технічне креслення": "https://drive.google.com/your-link-3",
+  "Алгоритми та структури даних": "https://classroom.google.com/c/Nzc1NTQzODU4NzE2",
+  // ... додайте інші курси за потребою
+  };
+
+  faculties.forEach((faculty, i) => {
+    const col = document.createElement("div");
+    col.className = "col-md-4";
+
+    const card = document.createElement("div");
+    card.className = "faculty-card";
+    card.style.background = faculty.gradient;
+
+    const h4 = document.createElement("h4");
+    h4.textContent = faculty.name;
+    card.appendChild(h4);
+
+    const accordion = document.createElement("div");
+    accordion.className = "accordion mt-3";
+    accordion.id = `faculty${i+1}`;
+
+    faculty.specialties.forEach((spec, j) => {
+      const item = document.createElement("div");
+      item.className = "accordion-item";
+
+      const head = document.createElement("h2");
+      head.className = "accordion-header";
+      head.id = `spec${spec.code}Head`;
+
+      const button = document.createElement("button");
+      button.className = "accordion-button collapsed";
+      button.type = "button";
+      button.dataset.bsToggle = "collapse";
+      button.dataset.bsTarget = `#spec${spec.code}`;
+      button.textContent = `${spec.name}`;
+
+      head.appendChild(button);
+
+      const collapse = document.createElement("div");
+      collapse.className = "accordion-collapse collapse";
+      collapse.id = `spec${spec.code}`;
+      collapse.dataset.bsParent = `#faculty${i+1}`;
+
+      const body = document.createElement("div");
+      body.className = "accordion-body";
+
+      const ul = document.createElement("ul");
+      for (let level in spec.levels) {
+        const li = document.createElement("li");
+        li.textContent = level;
+
+        const innerUl = document.createElement("ul");
+        spec.levels[level].forEach(course => {
+          const courseLi = document.createElement("li");
+          const courseLink = document.createElement("a");
+          courseLink.textContent = course;
+          courseLink.href = courseLinks[course] || "#";
+          courseLink.target = "_blank";
+          courseLink.style.textDecoration = "none";
+          courseLink.style.color = "#0d6efd"; // Bootstrap primary color
+          courseLi.appendChild(courseLink);
+          innerUl.appendChild(courseLi);
+        });
+
+        li.appendChild(innerUl);
+        ul.appendChild(li);
+      }
+
+      body.appendChild(ul);
+      collapse.appendChild(body);
+
+      item.appendChild(head);
+      item.appendChild(collapse);
+      accordion.appendChild(item);
+    });
+
+    card.appendChild(accordion);
+    col.appendChild(card);
+    row.appendChild(col);
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
